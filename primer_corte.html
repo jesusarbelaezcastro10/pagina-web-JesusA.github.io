@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PROGRAMACION FUNCIONAL EN PYTHON</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-image: url('Funcional 2.jpg');
+      background-size: cover;
+      text-align: center;
+      color: white;
+    }
+    .container {
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .code-snippet {
+      background-color: #295264;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      text-align: left;
+    }
+  </style>
+</head>
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="primer_corte.html">Primer Corte</a></li>
+        <li><a href="segundo_corte.html">Segundo Corte</a></li>
+        <li><a href="tercer_corte.html">Tercer Corte</a></li>
+    </ul>
+</nav>
+<body>
+  <div class="container">
+    <h1>PROGRAMACION FUNCIONAL EN PYTHON</h1>
+
+    <div class="code-snippet">
+      <h2>1. map()</h2>
+      <p>La función map() se usa para aplicar una operación a cada elemento de una lista (u otro iterable) y devuelve un nuevo iterable con los resultados.</p>
+      <pre>
+        <code>
+          nums = [1, 2, 3, 4, 5]
+
+          doubled_nums = list(map(lambda x: x * 2, nums))
+          print(doubled_nums)  # Salida: [2, 4, 6, 8, 10]
+        </code>
+      </pre>
+      <p>En este ejemplo, map() toma una función anónima (lambda) que multiplica cada elemento de la lista nums por 2 y devuelve un iterable con los resultados.</p>
+    </div>
+
+    <div class="code-snippet">
+      <h2>2. filter()</h2>
+      <p>La función filter() se utiliza para filtrar elementos de un iterable basado en una condición y devuelve un iterable con los elementos que cumplen esa condición.</p>
+      <pre>
+        <code>
+          nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+          odd_nums = list(filter(lambda x: x % 2 != 0, nums))
+          print(odd_nums)  # Salida: [1, 3, 5, 7, 9]
+        </code>
+      </pre>
+      <p>En este caso, filter() toma una función lambda que verifica si un número es impar (x % 2 != 0) y devuelve un iterable con los elementos que cumplen esa condición.</p>
+    </div>
+
+    <div class="code-snippet">
+      <h2>3. reduce()</h2>
+      <p>La función reduce() (en Python, anteriormente estaba en la biblioteca functools) aplica una función a pares de elementos de un iterable para reducirlos a un solo valor acumulado.</p>
+      <p>Nota: En versiones más recientes de Python, reduce() ahora está en el módulo functools.</p>
+      <pre>
+        <code>
+          from functools import reduce
+
+          nums = [1, 2, 3, 4, 5]
+
+          sum_all = reduce(lambda x, y: x + y, nums)
+          print(sum_all)  # Salida: 15
+        </code>
+      </pre>
+      <p>En este ejemplo, reduce() toma una función lambda que suma dos elementos y los reduce a un solo valor acumulado. En cada paso, se aplica la función a los elementos sucesivos de la lista hasta que se reduce a un solo valor.</p>
+    </div>
+  </div>
+  <h1>Mapa Mental</h1>
+  <embed src="Mapa mental-Jesus-Arb (1) (2).pdf" type="application/pdf" width="100%" height="500px" />
+</div>
+<a href="index.html" class="button">Inicio</a>
+<a href="segundo_corte.html" class="button">Segundo Corte</a>
+<a href="tercer_corte.html" class="button">Tercer Corte</a>
+</div>
+<div class="info">
+    <p>Estudiante: Jesus David Arbelaez Castro</p>
+    <p>Código: 1003944590</p>
+    <p>Correo: jesus.arbelaez00@usc.edu.co</p>
+    <p>Profesor: Diego Fernando Loaiza Buitrago</p>
+    <p>Correo: diego.loaiza02@usc.edu.co</p>
+</div>
+</body>
+</html>
